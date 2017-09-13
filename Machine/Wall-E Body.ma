@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Wall-E Body.ma
-//Last modified: Mon, Sep 11, 2017 05:42:02 PM
+//Last modified: Mon, Sep 11, 2017 05:48:01 PM
 //Codeset: UTF-8
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,8 +13,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "C494E968-FC49-2504-5CC6-44A4089E8DA1";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -19.334536154833245 1.2887023622358944 45.612103944011885 ;
-	setAttr ".r" -type "double3" -0.93835273524484641 705.7999999999173 2.563123692493911e-17 ;
+	setAttr ".t" -type "double3" -24.661669932188506 18.628401880977872 -56.14232667862872 ;
+	setAttr ".r" -type "double3" -16.538352735694396 921.00000000005264 0 ;
 	setAttr ".rp" -type "double3" 0 -3.5527136788005009e-15 2.4868995751603507e-14 ;
 	setAttr ".rpt" -type "double3" -1.5803165616768132e-13 -1.0791269342700736e-13 -1.4382617811130981e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -22,7 +22,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 53.562241428993929;
+	setAttr ".coi" 58.635605029948358;
 	setAttr ".ow" 43.798786611859995;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
