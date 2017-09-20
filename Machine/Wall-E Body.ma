@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Wall-E Body.ma
-//Last modified: Wed, Sep 20, 2017 04:18:40 PM
+//Last modified: Wed, Sep 20, 2017 04:23:02 PM
 //Codeset: UTF-8
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -15,8 +15,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "C494E968-FC49-2504-5CC6-44A4089E8DA1";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 10.673670506782457 20.202905661195423 -43.008726803389386 ;
-	setAttr ".r" -type "double3" -17.738352750220855 1604.1999999994773 0 ;
+	setAttr ".t" -type "double3" 58.994950354835289 16.076554227840955 -74.130113268243903 ;
+	setAttr ".r" -type "double3" -6.9383527500485052 1582.2000000003211 0 ;
 	setAttr ".rp" -type "double3" 0 -3.5527136788005009e-15 2.4868995751603507e-14 ;
 	setAttr ".rpt" -type "double3" -1.5803165616768132e-13 -1.0791269342700736e-13 -1.4382617811130981e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -24,7 +24,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 45.013154522609447;
+	setAttr ".coi" 91.860677497942419;
 	setAttr ".ow" 43.798786611859995;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -1155,9 +1155,9 @@ createNode imagePlane -n "Wall_E_Eye:imagePlaneShape1" -p "Wall_E_Eye:imagePlane
 	setAttr ".cs" -type "string" "sRGB";
 createNode transform -n "Wall_E_Eye:pCylinder1";
 	rename -uid "F4ED7EBB-C840-441F-A9B4-35A7337B4A4C";
-	setAttr ".t" -type "double3" -4.2923460488130258 17.578561424896758 -7.0639815308494258 ;
-	setAttr ".r" -type "double3" 89.999999999999901 180 17.553259228901226 ;
-	setAttr ".s" -type "double3" 2.1226093911907347 2.1226093911907347 2.1226093911907347 ;
+	setAttr ".t" -type "double3" -4.957655147536645 19.873216239794967 -6.4636405530207259 ;
+	setAttr ".r" -type "double3" 79.202116862908468 180 4.0072883179892553 ;
+	setAttr ".s" -type "double3" 2.3596713460063223 1.8713183916929736 2.2508254425932117 ;
 createNode mesh -n "Wall_E_Eye:pCylinderShape1" -p "Wall_E_Eye:pCylinder1";
 	rename -uid "6C7EAE36-AF48-F543-1160-27A8AAD3AFD5";
 	setAttr -k off ".v";
@@ -1219,9 +1219,9 @@ createNode mesh -n "Wall_E_Eye:pCylinderShape1" -p "Wall_E_Eye:pCylinder1";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pCylinder1";
 	rename -uid "2CEA9030-C847-6394-A191-51A29A4EEF70";
-	setAttr ".t" -type "double3" 4.4061689747727897 17.632403537132092 -6.8076361732888726 ;
-	setAttr ".r" -type "double3" 89.999999999999858 180 -12.654698230913743 ;
-	setAttr ".s" -type "double3" -2.1218532929941305 2.1226093911907347 2.1226093911907347 ;
+	setAttr ".t" -type "double3" 5.1597948928646575 19.814174527425219 -6.2072951954601727 ;
+	setAttr ".r" -type "double3" 79.202116862908227 180 -4.0134871505930825 ;
+	setAttr ".s" -type "double3" -2.3588308035792989 1.8713183916929736 2.2508254425932117 ;
 createNode mesh -n "pCylinderShape1" -p "pCylinder1";
 	rename -uid "991E6AF5-6348-DE6D-BE9B-D28A577D5244";
 	setAttr -k off ".v";
