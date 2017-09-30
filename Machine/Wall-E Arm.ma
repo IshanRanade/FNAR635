@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Wall-E Arm.ma
-//Last modified: Sat, Sep 30, 2017 05:05:52 PM
+//Last modified: Sat, Sep 30, 2017 05:08:40 PM
 //Codeset: UTF-8
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -14,15 +14,15 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "FEA1939A-384E-118E-7162-CCA803A7EB52";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 31.790747929757604 11.072939231367975 17.300273590499263 ;
-	setAttr ".r" -type "double3" -14.738352740431196 76.599999994816827 -6.8621002224858593e-15 ;
+	setAttr ".t" -type "double3" -16.765763390672085 -0.94163074243421485 18.132565104299651 ;
+	setAttr ".r" -type "double3" 5.6616472595742593 -76.200000005184634 0 ;
 	setAttr ".rp" -type "double3" 0 -1.8735013540549517e-16 -1.7763568394002505e-15 ;
 	setAttr ".rpt" -type "double3" -1.7831038497578523e-15 1.200584555684532e-16 1.8573271112531938e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "DF422BB5-4640-DE6F-A46D-52B507FCA7D0";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 27.067925623444808;
+	setAttr ".coi" 18.396776405493476;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -2842,9 +2842,9 @@ createNode mesh -n "armShape" -p "arm";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "arm1";
 	rename -uid "82EB51C4-EB4A-5FEA-6DCC-8D884FEF31D7";
-	setAttr ".t" -type "double3" 1.8382685252980795 -5.3902742121721978 -0.60464231865389806 ;
+	setAttr ".t" -type "double3" 1.8382685252980795 -5.4720888390969158 -0.60464231865389806 ;
 	setAttr ".r" -type "double3" 0.19143684529438232 -8.8200695173189541 -180.78214945161014 ;
-	setAttr ".s" -type "double3" 1 1.0293912943427179 1.1001997965186612 ;
+	setAttr ".s" -type "double3" 1 1.0293912943427179 0.94325090534913691 ;
 	setAttr ".rp" -type "double3" -0.28025901623650218 5.7597935550478434 15.609389230658829 ;
 	setAttr ".rpt" -type "double3" 1.2160620722034361 0 -0.062433969874889972 ;
 	setAttr ".sp" -type "double3" -0.28025901623650218 5.7597935550478434 15.609389230658829 ;
@@ -3422,6 +3422,7 @@ createNode transform -n "arm4";
 	rename -uid "BCBD119B-984A-AEF3-EE94-D5B6AE05D821";
 	setAttr ".t" -type "double3" 1.8382685252980795 2.6272584780836481 -0.60464231865389806 ;
 	setAttr ".r" -type "double3" -0.46287293904241611 -34.659519414031237 -180.59654254371864 ;
+	setAttr ".s" -type "double3" 0.90567969904051959 1 1 ;
 	setAttr ".rp" -type "double3" -0.53997092700865534 -2.2874830083800761 14.947359179815045 ;
 	setAttr ".rpt" -type "double3" 1.0957614328561636 0 -0.0015066777744214277 ;
 	setAttr ".sp" -type "double3" -0.53997092700865534 -2.2874830083800761 14.947359179815045 ;
@@ -3443,8 +3444,7 @@ createNode mesh -n "arm4Shape" -p "arm4";
 	setAttr ".pt[5]" -type "float3" -1.4901161e-08 0 0 ;
 	setAttr ".pt[40]" -type "float3" -1.8626451e-09 0 7.4505806e-09 ;
 	setAttr ".pt[41]" -type "float3" -1.8626451e-09 0 7.4505806e-09 ;
-	setAttr ".dr" 3;
-	setAttr ".dsm" 2;
+	setAttr ".dr" 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode mesh -n "polySurfaceShape5" -p "arm4";
 	rename -uid "A4D899FE-0647-D1EE-CA0B-BCAAB02B7A46";
